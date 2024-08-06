@@ -1,0 +1,27 @@
+{
+    "name": "backend-fullstack-portfolio-demo",
+    "version": "1.0.0",
+    "main": "src/server.js",
+    "scripts": {
+        "test": "jest",
+        "start": "nodemon src/server.js",
+        "db:init": "psql -U postgres -f src/db/schema.sql",
+        "db:seed": "psql -U postgres -f src/db/seed.sql"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "morgan": "^1.10.0",
+        "pg-promise": "^11.9.1"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.4",
+        "supertest": "^7.0.0"
+    }
+}

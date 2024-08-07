@@ -26,6 +26,7 @@ router.post('/', async (req, res) => {
         const sighting = await sightingQueries.createSighting(req.body);
         res.status(201).json(sighting);
     } catch (err) {
+        console.error("Error creating sighting:", err);
         res.status(500).json({ error: err.message });
     }
 });

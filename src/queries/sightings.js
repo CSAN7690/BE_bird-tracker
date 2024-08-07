@@ -2,7 +2,11 @@ const db = require('../db/dbConfig');
 
 const getAllSightings = async () => {
     try {
-        return await db.any('SELECT * FROM sightings');
+        return await db.any(`
+            SELECT sightings.*, birds.species, birds.description, birds.image_url
+            FROM sightings
+            JOIN birds ON sightings.bird_id = birds.bird_id
+        `);
     } catch (err) {
         throw err;
     }

@@ -44,5 +44,4 @@ VALUES
   (17, 'Central Park - Cedar Hill', '2024-08-17', '16:45', 'Feeding on the slope', 'http://example.com/sighting17.jpg'),
   (18, 'Central Park - The Loch', '2024-08-18', '10:30', 'Flying through the gorge', 'http://example.com/sighting18.jpg'),
   (19, 'Central Park - The Pond', '2024-08-19', '13:15', 'Spotted near the water', 'http://example.com/sighting19.jpg'),
-  (20, 'Central Park - East Meadow', '2024-08-20', '12:00', 'Resting in the open field', 'http://example.com/sighting20.jpg'),
-  (21, 'Central Park - Balto Statue', '2024-08-21', '10:45', 'Perched on the statue', 'http://example.com/sighting21.jpg');
+  (20, 'Central Park - Balto Statue', '2024-08-21', '10:45', 'Perched on the statue', 'http://example.com/sighting21.jpg');

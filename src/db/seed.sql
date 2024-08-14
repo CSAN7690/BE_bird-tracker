@@ -19,11 +19,13 @@ VALUES
   ('Great Egret', 'A large, white heron with a long neck and legs, often seen near water', 'http://example.com/greategret.jpg'),
   ('Eastern Bluebird', 'A small, vibrant blue bird with a reddish-brown chest', 'http://example.com/easternbluebird.jpg'),
   ('Tufted Titmouse', 'A small, gray bird with a tufted crest and a curious nature', 'http://example.com/tuftedtitmouse.jpg'),
-  ('Downy Woodpecker', 'A small woodpecker with black and white plumage and a short bill', 'http://example.com/downywoodpecker.jpg');
+  ('Downy Woodpecker', 'A small woodpecker with black and white plumage and a short bill', 'http://example.com/downywoodpecker.jpg'),
+  ('Northern Cardinal', 'A bright red bird often seen in pairs', 'http://example.com/northerncardinal.jpg'),
+  ('Barn Swallow', 'A small bird with a deeply forked tail and long, pointed wings', 'http://example.com/barnswallow.jpg');
 
 INSERT INTO sightings (bird_id, location, date, time, notes, photo_url)
 VALUES 
-(1, 'Central Park - The Lake', '2024-08-01', '14:00', 'Spotted near the lake', 'http://example.com/sighting1.jpg'),
+  (1, 'Central Park - The Lake', '2024-08-01', '14:00', 'Spotted near the lake', 'http://example.com/sighting1.jpg'),
   (2, 'Central Park - The Mall', '2024-08-02', '10:30', 'Nest of newborn chicks', 'http://example.com/sighting2.jpg'),
   (3, 'Central Park - Sheep Meadow', '2024-08-03', '09:15', 'Feeding on the grass', 'http://example.com/sighting3.jpg'),
   (4, 'Central Park - Strawberry Fields', '2024-08-04', '12:45', 'Perched on a tree', 'http://example.com/sighting4.jpg'),

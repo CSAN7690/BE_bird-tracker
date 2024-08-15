@@ -32,10 +32,14 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
+    const { id } = req.params;
+    const { notes } = req.body;
+
     try {
-        const sighting = await sightingQueries.updateSighting(req.params.id, req.body);
-        res.status(200).json(sighting);
+        const updatedSighting = await sightingQueries.updateSighting(id, { notes });
+        res.status(200).json(updatedSighting);
     } catch (err) {
+        console.error('Error updating sighting:', err);  // Log the error
         res.status(500).json({ error: err.message });
     }
 });
